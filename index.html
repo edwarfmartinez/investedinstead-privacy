@@ -280,6 +280,30 @@
       letter-spacing: 0.08em;
     }
 
+    .footer {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+      display: flex;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.04);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .footer a:hover {
+      transform: translateY(-1px);
+      border-color: var(--accent);
+    }
+
     @media (max-width: 960px) {
       .hero,
       .split-section {
@@ -435,6 +459,10 @@
         </a>
       </div>
     </section>
+
+    <footer class="footer">
+      <a href="PrivacyPolicy.html">Privacy Policy</a>
+    </footer>
   </main>
 </body>
 </html>
